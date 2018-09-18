@@ -1,0 +1,67 @@
+Source: gsettings-qt
+Priority: optional
+Maintainer: Debian Deepin Packaging Team <pkg-deepin-devel@lists.alioth.debian.org>
+Uploaders:
+ Boyuan Yang <073plan@gmail.com>,
+ Iceyer <iceyers@gmail.com>,
+Build-Depends:
+ debhelper (>= 11~),
+ libglib2.0-dev,
+ pkg-config,
+ pkg-kde-tools,
+ qml-module-qtquick2,
+ qml-module-qttest,
+ qt5-qmake,
+ qtbase5-dev,
+ qtdeclarative5-dev (>= 5.8~),
+ qtdeclarative5-dev-tools,
+ xauth,
+ xvfb,
+Standards-Version: 4.1.4
+Section: libs
+Homepage: https://launchpad.net/gsettings-qt
+Vcs-Git: https://salsa.debian.org/pkg-deepin-team/gsettings-qt.git
+Vcs-Browser: https://salsa.debian.org/pkg-deepin-team/gsettings-qt
+
+Package: libgsettings-qt-dev
+Section: libdevel
+Architecture: any
+Multi-Arch: same
+Depends:
+ libgsettings-qt1 (= ${binary:Version}),
+ ${misc:Depends},
+Description: library to access GSettings from Qt (development files)
+ Libgsettings-qt provides Qt binding to GSettings, a high-level API
+ for application settings. This library can be used to access GSettings from Qt
+ applications.
+ .
+ This package contains the development files needed to build applications using
+ the GSettings Qt library.
+
+Package: libgsettings-qt1
+Architecture: any
+Multi-Arch: same
+Depends:
+ ${misc:Depends},
+ ${shlibs:Depends},
+Description: library to access GSettings from Qt (shared libraries)
+ Libgsettings-qt provides Qt binding to GSettings, a high-level API
+ for application settings. This library can be used to access GSettings from Qt
+ applications.
+ .
+ This package contains shared library files for libgsettings-qt.
+
+Package: qml-module-gsettings1.0
+Architecture: any
+Multi-Arch: same
+Depends:
+ libgsettings-qt1 (= ${binary:Version}),
+ ${misc:Depends},
+ ${shlibs:Depends},
+Description: QML Bindings for GSettings
+ Libgsettings-qt provides Qt binding to GSettings, a high-level API
+ for application settings. This library can be used to access GSettings from Qt
+ applications.
+ .
+ This package provides QML bindings for GSettings. QML applications
+ may use this library to manipulate data stored in GSettings database.

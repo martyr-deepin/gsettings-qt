@@ -1,0 +1,3 @@
+usr/include
+usr/lib/*/libgsettings-qt.so
+usr/lib/*/pkgconfig/gsettings-qt.pc
