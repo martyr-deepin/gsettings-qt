@@ -5,7 +5,7 @@ Uploaders:
  Boyuan Yang <073plan@gmail.com>,
  Iceyer <iceyers@gmail.com>,
 Build-Depends:
- debhelper (>= 11~),
+ debhelper (>= 10~),
  libglib2.0-dev,
  pkg-config,
  pkg-kde-tools,
@@ -13,7 +13,7 @@ Build-Depends:
  qml-module-qttest,
  qt5-qmake,
  qtbase5-dev,
- qtdeclarative5-dev (>= 5.8~),
+ qtdeclarative5-dev (>= 5.7~),
  qtdeclarative5-dev-tools,
  xauth,
  xvfb,
