@@ -2,3 +2,4 @@
 0002-Add-ordered-config.patch
 0003-Fix-make-check-failed.patch
 0004-Increase-test-timeout.patch
+changelog.patch
