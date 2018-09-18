@@ -1,4 +1,4 @@
-gsettings-qt (0.1+17.10.20170824-4) unstable; urgency=medium
+gsettings-qt (0.1+17.10.20170824) unstable; urgency=medium
 
   * Add patch to increase timeout in tests to circumvent FTBFS on riscv64.
     Closes: #898497.
